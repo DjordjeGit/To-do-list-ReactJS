@@ -1,0 +1,72 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+  transition: ease-in-out 1s;
+  font-weight: 600;
+  color: black;
+}
+.textFocused {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-right: 0;
+  transition: ease-in-out 1s;
+}
+.dateHolder {
+  display: flex;
+}
+
+.pForDays {
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  transform: translateY(5px);
+  font-weight: 600;
+}
+
+.taskDate {
+  margin-top: 1rem;
+  width: max-content;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  background-color: rgb(241 241 241 / 46%);
+  color: white;
+  border-radius: 1rem;
+}
+
+.taskDate p {
+  font-size: 1.2rem;
+  text-align: center;
+  transform: translateY(20%);
+}
+@media (min-width: 312px) and (max-width: 600px) {
+  .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-right: 1rem;
+    transition: ease-in-out 1s;
+  }
+  .pForDays {
+    font-size: 1rem;
+    margin: 1.5rem;
+    transform: translateY(5px);
+  }
+
+  .taskDate {
+    margin-top: 1rem;
+    width: max-content;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(241 241 241 / 46%);
+    color: white;
+  }
+  .taskDate p {
+    font-size: 1rem;
+    text-align: center;
+    transform: translateY(4%);
+  }
+}
